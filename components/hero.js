@@ -1,8 +1,9 @@
-export default function Hero() {
+export default function Hero({ title, subtitle, imageOn = false }) {
   return (
     <>
-      <h1 style={{ fontSize: "80px" }}>Cube</h1>
-      <p>アウトプットしていくサイト</p>
+      <h1 style={{ fontSize: "80px" }}>{title}</h1>
+      <p>{subtitle}</p>
+      {imageOn && <figure>[画像]</figure>}
     </>
   );
 }
